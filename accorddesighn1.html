@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion</title>
+    <link href="css/accordd1-style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="accordion">
+                <div class="question active">Kirk Douglas</div>
+                <div class="answer">Kirk Douglas ... For the musician, see Captain Kirk Douglas. Kirk Douglas (born
+                    Issur Danielovitch; December 9, 1916 February 5, 2020) was an American actor</div>
+
+                <div class="question">Elsa Martinelli</div>
+                <div class="answer">Elsa Martinelli was an Italian actress and fashion model. Described by The
+                        Guardian as a "versatile star of Hollywood's international years whose work</div>
+
+                <div class="question">Walter Matthau</div>
+                <div class="answer">Walter John Matthau was an American screen and stage actor, known for his
+                            "hangdog face" and for playing world-weary characters.</div>
+                <div class="question">Diana Douglas</div>
+                <div class="answer">Diana Douglas was a Bermudian-American actress who was marrie
+                    d to actor Kirk
+                            Douglas from 1943 until their divorce in 1951.</div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"> </script>
+    <script>
+        $('.question').click(function () {
+           
+            $('.question').removeClass("active");
+
+            if ($(this).next().is(":hidden")) {
+                $(this).next().show();
+
+                $(this).addClass("active");
+
+            } else {
+                $(this).next().show();
+                ($(this).next().hide());
+                $(this).removeClass("active");
+            }
+
+        });
+
+       
+
+    </script>
+    
+</body>
+</html>
