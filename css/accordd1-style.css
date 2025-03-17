@@ -10,8 +10,11 @@
 }
 
 h1{ color: black;
-    justify-content: center;
-    align-items: center; 
+    align-items: center;
+    margin: auto;
+    max-width: 600px;
+    margin-top: 60px;
+    color: black; 
 
 
 }
